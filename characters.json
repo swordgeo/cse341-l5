@@ -1,0 +1,50 @@
+{
+  "character": {
+    "characterName": "Balthazar Flintchin",
+    "playerName": "Ross",
+    "race": "dwarf",
+    "class": "wizard",
+    "level": "8",
+    "alignment": "LN",
+    "stats": {
+      "str": "14",
+      "dex": "10",
+      "con": "16",
+      "int": "20",
+      "wis": "14",
+      "cha": "8"
+    }
+  },
+  "character2": {
+    "characterName": "Fenrick Whitewall",
+    "playerName": "Jordan",
+    "race": "halfling",
+    "class": "rogue",
+    "level": "8",
+    "alignment": "CN",
+    "stats": {
+      "str": "10",
+      "dex": "20",
+      "con": "14",
+      "int": "16",
+      "wis": "8",
+      "cha": "16"
+    }
+  },
+  "character3": {
+    "characterName": "Darzenal",
+    "playerName": "Trevor",
+    "race": "dragonborn",
+    "class": "barbarian",
+    "level": "8",
+    "alignment": "CG",
+    "stats": {
+      "str": "20",
+      "dex": "10",
+      "con": "18",
+      "int": "10",
+      "wis": "14",
+      "cha": "8"
+    }
+  }
+}

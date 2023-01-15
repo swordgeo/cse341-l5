@@ -1,0 +1,138 @@
+//Localhost
+//They get mad when there's not empty space between the lines...even if it's a commented line...
+//Also for whatever reason place ### between each request so it knows they're separate.
+GET http://localhost:3000/characters/
+
+
+//Individuals
+###
+GET http://localhost:3000/characters/63c460951020ab4635d1bf7a
+
+###
+GET http://localhost:3000/characters/63c460951020ab4635d1bf7b
+
+###
+GET http://localhost:3000/characters/63c460951020ab4635d1bf7c
+
+
+###
+POST http://localhost:3000/characters/
+Content-Type: application/json
+
+{
+  "characterName": "Amun Sunblessed",
+  "playerName": "Jay",
+  "race": "human",
+  "class": "sorcerer",
+  "level": "8",
+  "alignment": "CG",
+  "stats": {
+    "str": "8",
+    "dex": "10",
+    "con": "14",
+    "int": "12",
+    "wis": "14",
+    "cha": "20"
+  }
+}
+
+###
+DELETE http://localhost:3000/characters/63c4796d29591d8cf4fd7897
+
+###
+//this will overwrite EVERYTHING; we can't change one field at a time (yet)
+//Will even remove values we leave blank in PUT request
+
+//Assignment demands I use 204 but that status won't let me set json messages
+//So don't freak out that we get no message - freak out if we DO
+
+PUT http://localhost:3000/characters/63c46e93466b515692939ed7
+Content-type: application/json
+
+{
+  "characterName": "Sha'ar",
+  "playerName": "Tyler",
+  "race": "elf",
+  "class": "monk",
+  "level": "8",
+  "alignment": "LE",
+  "stats": {
+    "str": "14",
+    "dex": "20",
+    "con": "14",
+    "int": "10",
+    "wis": "20",
+    "cha": "10"
+  }
+}
+
+//Render
+
+//REMEMBER TO UPDATE RENDER LINKS AFTER EACH LESSON
+
+//AND REMEMBER TO TOSS IN .env DETAILS In Environment/Environment Variables
+
+###
+GET https://cse341-l5.onrender.com/characters/
+
+//Individuals
+###
+GET https://cse341-l5.onrender.com/characters/63b8bfd0d1eae2434d1851df
+###
+
+GET https://cse341-l5.onrender.com/characters/63b8bfd0d1eae2434d1851e0
+
+###
+GET https://cse341-l5.onrender.com/characters/63b8bfd0d1eae2434d1851e1
+
+###
+POST https://cse341-l5.onrender.com/characters/
+Content-Type: application/json
+
+{
+  "characterName": "Eriladel Selibaneril",
+  "playerName": "George",
+  "race": "elf",
+  "class": "paladin/sorcerer",
+  "level": "16",
+  "alignment": "LG",
+  "stats": {
+    "str": "8",
+    "dex": "20",
+    "con": "10",
+    "int": "14",
+    "wis": "16",
+    "cha": "20"
+  }
+}
+
+###
+DELETE https://cse341-l5.onrender.com/characters/63bd4d46c2bedd951325c132
+
+###
+//this will overwrite EVERYTHING; we can't change one field at a time (yet)
+//Will even remove values we leave blank in PUT request
+
+//Assignment demands I use 204 but that status won't let me set json messages
+//So don't freak out that we get no message - freak out if we DO
+
+PUT https://cse341-l5.onrender.com/characters/63bb58adc5845df68edbea4e
+Content-type: application/json
+
+{
+  "characterName": "Gremweld",
+  "playerName": "Larry",
+  "race": "gnome",
+  "class": "fighter/rogue",
+  "level": "8",
+  "alignment": "NN",
+  "stats": {
+    "str": "18",
+    "dex": "20",
+    "con": "10",
+    "int": "16",
+    "wis": "12",
+    "cha": "8"
+  }
+}
+

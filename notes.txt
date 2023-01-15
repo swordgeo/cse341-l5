@@ -1,0 +1,35 @@
+Junk from contacts we can delete once everything is transferred and adapted
+
+  "character": {
+    "characterName": "",
+    "playerName": "",
+    "race": "",
+    "class": "",
+    "level": "",
+    "alignment": "",
+    "stats": {
+      "str": "",
+      "dex": "",
+      "con": "",
+      "int": "",
+      "wis": "",
+      "cha": ""
+    }
+  },
+
+{
+  "characterName": "",
+  "playerName": "",
+  "race": "",
+  "class": "",
+  "level": "",
+  "alignment": "",
+  "stats": {
+    "str": "",
+    "dex": "",
+    "con": "",
+    "int": "",
+    "wis": "",
+    "cha": ""
+  }
+}
