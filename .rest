@@ -77,7 +77,8 @@ GET https://cse341-l5.onrender.com/characters/
 
 //Individuals
 ###
-GET https://cse341-l5.onrender.com/characters/63b8bfd0d1eae2434d1851df
+GET https://cse341-l5.onrender.com/characters/63c460951020ab4635d1bf7a
+
 ###
 
 GET https://cse341-l5.onrender.com/characters/63b8bfd0d1eae2434d1851e0
@@ -107,7 +108,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE https://cse341-l5.onrender.com/characters/63bd4d46c2bedd951325c132
+DELETE https://cse341-l5.onrender.com/characters/63c484606242b6af027d4693
 
 ###
 //this will overwrite EVERYTHING; we can't change one field at a time (yet)
@@ -116,7 +117,7 @@ DELETE https://cse341-l5.onrender.com/characters/63bd4d46c2bedd951325c132
 //Assignment demands I use 204 but that status won't let me set json messages
 //So don't freak out that we get no message - freak out if we DO
 
-PUT https://cse341-l5.onrender.com/characters/63bb58adc5845df68edbea4e
+PUT https://cse341-l5.onrender.com/characters/63c4845f6242b6af027d4692
 Content-type: application/json
 
 {

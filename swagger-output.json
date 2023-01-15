@@ -5,10 +5,10 @@
     "description": "Welcome to my fumbling mess",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse-341-l5.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/characters/": {
@@ -54,22 +54,7 @@
                 "alignment": {
                   "example": "any"
                 },
-                "str": {
-                  "example": "any"
-                },
-                "dex": {
-                  "example": "any"
-                },
-                "con": {
-                  "example": "any"
-                },
-                "int": {
-                  "example": "any"
-                },
-                "wis": {
-                  "example": "any"
-                },
-                "cha": {
+                "stats": {
                   "example": "any"
                 }
               }
@@ -124,19 +109,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "characterName": {
                   "example": "any"
                 },
-                "lastName": {
+                "playerName": {
                   "example": "any"
                 },
-                "email": {
+                "race": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "class": {
                   "example": "any"
                 },
-                "birthday": {
+                "level": {
+                  "example": "any"
+                },
+                "alignment": {
+                  "example": "any"
+                },
+                "stats": {
                   "example": "any"
                 }
               }
@@ -176,6 +167,13 @@
             "description": "Internal Server Error"
           }
         }
+      }
+    },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
       }
     }
   }
