@@ -5,7 +5,7 @@ const mongodb = require('./db/connect');
 //From the swagger-ui-express page, Sulove advised I throw that junk into routes/swagger-route.js instead
 
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 const app = express();
 
 app

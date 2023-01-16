@@ -5,7 +5,7 @@
     "description": "Welcome to my fumbling mess",
     "version": "1.0.0"
   },
-  "host": "cse-341-l5.onrender.com",
+  "host": "https://cse341-l5.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
