@@ -19,8 +19,8 @@ const getCharacters = async (req, res, next) => {
 //await mongodb...  .find({_id: userId})
 const getCharacter = async (req, res, next) => {
   try {
-    const userId = new ObjectId(req.params.id);
-    const result = await mongodb.getDb().db("cse341-database").collection('characters').find({_id: userId});
+    const characterId = new ObjectId(req.params.id);
+    const result = await mongodb.getDb().db("cse341-database").collection('characters').find({_id: characterId});
     result.toArray().then((lists) => {
       res.setHeader('Content-Type', 'application/json');
       res.status(200).json(lists[0]);
@@ -65,8 +65,8 @@ const addCharacter = async (req, res, next) => {
 const delCharacter = async (req, res, next) => {
   try {
     
-    const userId = new ObjectId(req.params.id);
-    const result = await mongodb.getDb().db("cse341-database").collection('characters').deleteOne({_id: userId});
+    const characterId = new ObjectId(req.params.id);
+    const result = await mongodb.getDb().db("cse341-database").collection('characters').deleteOne({_id: characterId});
 
     //result = { "acknowledged" : true, "deletedCount" : 1 }
     if (result.deletedCount > 0) {
@@ -105,9 +105,9 @@ const editCharacter = async (req, res, next) => {
 
   try {
     
-    const userId = new ObjectId(req.params.id);
+    const characterId = new ObjectId(req.params.id);
     const result = await mongodb.getDb().db("cse341-database").collection('characters').updateOne(
-      {_id: userId},
+      {_id: characterId},
       //this will overwrite EVERYTHING; we can't change one field at a time (yet)
       {$set: {
         "characterName": character.characterName,

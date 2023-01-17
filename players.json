@@ -1,0 +1,38 @@
+{
+  "player": {
+    "playerName": "Ross",
+    "characters": [
+      {
+        "characterName": "Balthazar Flintchin",
+        "campaign": "Oathbound",
+        "characterId": "63c460951020ab4635d1bf7a"
+      }
+    ]
+  },
+  "player2": {
+    "playerName": "Jordan",
+    "characters": [
+      {
+        "characterName": "Fenrick Whitewall",
+        "campaign": "Oathbound",
+        "characterId": "63c460951020ab4635d1bf7b"
+      },
+      {
+        "characterName": "Iris Wellington",
+        "campaign": "Timebreakers",
+        "characterId": "63c460951020ab4635d1bf7b"
+      }
+    ]
+  },
+  "player3": {
+    "playerName": "Trevor",
+    "characters": [
+      {
+        "characterName": "Darzenal",
+        "campaign": "Oathbound",
+        "characterId": "63c460951020ab4635d1bf7c"
+      }
+    ]
+  }
+}
+

@@ -33,3 +33,15 @@ Junk from contacts we can delete once everything is transferred and adapted
     "cha": ""
   }
 }
+
+  "player": {
+    "playerName": "",
+    "campaigns": "",
+    "characters": {
+      "character": {
+        "characterName": "",
+        "characterId": ""
+      }
+
+    }
+  },
