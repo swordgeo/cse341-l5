@@ -33,7 +33,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/characters/63c8760927254bd691c7ad62
+DELETE http://localhost:3000/characters/63c8a591a14d9ca66d574139
 
 ###
 //this will overwrite EVERYTHING; we can't change one field at a time (yet)
@@ -42,7 +42,7 @@ DELETE http://localhost:3000/characters/63c8760927254bd691c7ad62
 //Assignment demands I use 204 but that status won't let me set json messages
 //So don't freak out that we get no message - freak out if we DO
 
-PATCH http://localhost:3000/characters/63c8a2f009ed32332fc96588
+PATCH http://localhost:3000/characters/63c8a5eda14d9ca66d574142
 Content-type: application/json
 
 {
@@ -84,7 +84,7 @@ Content-Type: application/json
 ###
 DELETE http://localhost:3000/players/63c8760927254bd691c7ad62
 ###
-PATCH http://localhost:3000/players/63c8a35109ed32332fc9658d
+PATCH http://localhost:3000/players/63c8a608a14d9ca66d574147
 Content-type: application/json
 
 {
@@ -147,12 +147,10 @@ DELETE https://cse341-l5.onrender.com/characters/63c8a39eff54365eb9eabb0f
 //Assignment demands I use 204 but that status won't let me set json messages
 //So don't freak out that we get no message - freak out if we DO
 
-PATCH https://cse341-l5.onrender.com/characters/63c8a39eff54365eb9eabb0f
+PATCH https://cse341-l5.onrender.com/characters/63c8a6622b5394fa536ceebe
 Content-type: application/json
 
 {
-  "characterName": "Gremweld",
-  "race": "gnome",
   "class": "fighter/rogue",
   "level": "8",
   "stats": {
