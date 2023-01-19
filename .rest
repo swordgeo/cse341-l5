@@ -42,7 +42,7 @@ DELETE http://localhost:3000/characters/63c8760927254bd691c7ad62
 //Assignment demands I use 204 but that status won't let me set json messages
 //So don't freak out that we get no message - freak out if we DO
 
-PATCH http://localhost:3000/characters/63c87cfc525cbe1872e1525d
+PATCH http://localhost:3000/characters/63c8a2f009ed32332fc96588
 Content-type: application/json
 
 {
@@ -66,7 +66,7 @@ GET http://localhost:3000/players/
 
 //Individuals
 ###
-GET http://localhost:3000/players/63c460951020ab4635d1bf7a
+GET http://localhost:3000/players/63c88ff5b0b091bd98329493
 ###
 GET http://localhost:3000/players/63c460951020ab4635d1bf7b
 ###
@@ -84,15 +84,12 @@ Content-Type: application/json
 ###
 DELETE http://localhost:3000/players/63c8760927254bd691c7ad62
 ###
-PATCH http://localhost:3000/players/63c88ff5b0b091bd98329493
+PATCH http://localhost:3000/players/63c8a35109ed32332fc9658d
 Content-type: application/json
 
 {
   "characterName": "Doy'ul Daermon N'a'shezbaernon",
-  "playerName": "George",
-  "race": "eligas",
-  "class": "fighter",
-  "alignment": "CN",
+  "playerName": "George"
 }
 
 //End Players
@@ -141,7 +138,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE https://cse341-l5.onrender.com/characters/63c484606242b6af027d4693
+DELETE https://cse341-l5.onrender.com/characters/63c8a39eff54365eb9eabb0f
 
 ###
 //this will overwrite EVERYTHING; we can't change one field at a time (yet)
@@ -150,16 +147,14 @@ DELETE https://cse341-l5.onrender.com/characters/63c484606242b6af027d4693
 //Assignment demands I use 204 but that status won't let me set json messages
 //So don't freak out that we get no message - freak out if we DO
 
-PATCH https://cse341-l5.onrender.com/characters/63c6b8ca2ea7c3daee5962b0
+PATCH https://cse341-l5.onrender.com/characters/63c8a39eff54365eb9eabb0f
 Content-type: application/json
 
 {
   "characterName": "Gremweld",
-  "playerName": "Larry",
   "race": "gnome",
   "class": "fighter/rogue",
   "level": "8",
-  "alignment": "NN",
   "stats": {
     "str": "18",
     "dex": "20",
@@ -182,7 +177,7 @@ GET http://cse341-l5.onrender.com/players/63c460951020ab4635d1bf7a
 ###
 GET http://cse341-l5.onrender.com/players/63c460951020ab4635d1bf7b
 ###
-GET http://cse341-l5.onrender.com/players/63c460951020ab4635d1bf7c
+GET http://cse341-l5.onrender.com/players/63c8a0fb0ddf85957df7e854
 ###
 POST http://cse341-l5.onrender.com/players/
 Content-Type: application/json
@@ -194,15 +189,14 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://cse341-l5.onrender.com/players/63c8760927254bd691c7ad62
+DELETE http://cse341-l5.onrender.com/players/63c8a0fb0ddf85957df7e854
 ###
 PATCH http://cse341-l5.onrender.com/players/63c8a0fb0ddf85957df7e854
 Content-type: application/json
 
 {
-  "characterName": "Doy'ul Daermon N'a'shezbaernon",
-  "playerName": "George",
-  "campaign": "Sunrise Knights"
+  "characterName": "Leedler",
+  "campaign": "Sunrise Knights",
 }
 
 //End Players
