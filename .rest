@@ -196,15 +196,13 @@ Content-Type: application/json
 ###
 DELETE http://cse341-l5.onrender.com/players/63c8760927254bd691c7ad62
 ###
-PATCH http://cse341-l5.onrender.com/players/63c88ff5b0b091bd98329493
+PATCH http://cse341-l5.onrender.com/players/63c8a0fb0ddf85957df7e854
 Content-type: application/json
 
 {
   "characterName": "Doy'ul Daermon N'a'shezbaernon",
   "playerName": "George",
-  "race": "eligas",
-  "class": "fighter",
-  "alignment": "CN",
+  "campaign": "Sunrise Knights"
 }
 
 //End Players
