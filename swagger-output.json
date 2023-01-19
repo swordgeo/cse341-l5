@@ -14,9 +14,6 @@
     "/characters/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -37,25 +34,59 @@
               "type": "object",
               "properties": {
                 "characterName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "Senipul"
                 },
                 "playerName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "George"
                 },
                 "race": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "grey elf"
                 },
                 "class": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "psion/wizard/cleric"
                 },
                 "level": {
-                  "example": "any"
+                  "type": "integer",
+                  "example": "15"
                 },
                 "alignment": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "NN"
                 },
                 "stats": {
-                  "example": "any"
+                  "type": "object",
+                  "properties": {
+                    "str": {
+                      "type": "integer",
+                      "example": "10"
+                    },
+                    "dex": {
+                      "type": "integer",
+                      "example": "10"
+                    },
+                    "con": {
+                      "type": "integer",
+                      "example": "10"
+                    },
+                    "int": {
+                      "type": "integer",
+                      "example": "10"
+                    },
+                    "wis": {
+                      "type": "integer",
+                      "example": "10"
+                    },
+                    "cha": {
+                      "type": "integer",
+                      "example": "10"
+                    }
+
+                }
+                  
                 }
               }
             }
@@ -74,9 +105,6 @@
     "/characters/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "id",
@@ -94,7 +122,7 @@
           }
         }
       },
-      "put": {
+      "patch": {
         "description": "",
         "parameters": [
           {
@@ -110,33 +138,67 @@
               "type": "object",
               "properties": {
                 "characterName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "Senipul"
                 },
                 "playerName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "George"
                 },
                 "race": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "grey elf"
                 },
                 "class": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "psion/wizard/cleric"
                 },
                 "level": {
-                  "example": "any"
+                  "type": "integer",
+                  "example": "15"
                 },
                 "alignment": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "NN"
                 },
                 "stats": {
-                  "example": "any"
+                  "type": "object",
+                  "properties": {
+                    "str": {
+                      "type": "integer",
+                      "example": "10"
+                    },
+                    "dex": {
+                      "type": "integer",
+                      "example": "10"
+                    },
+                    "con": {
+                      "type": "integer",
+                      "example": "10"
+                    },
+                    "int": {
+                      "type": "integer",
+                      "example": "10"
+                    },
+                    "wis": {
+                      "type": "integer",
+                      "example": "10"
+                    },
+                    "cha": {
+                      "type": "integer",
+                      "example": "10"
+                    }
+
+                }
+                  
                 }
               }
             }
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "200": {
+            "description": "OK"
           },
           "404": {
             "description": "Not Found"
@@ -172,9 +234,6 @@
     "/players/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -195,16 +254,16 @@
               "type": "object",
               "properties": {
                 "playerName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "George"
                 },
                 "characterName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "Senipul"
                 },
                 "campaign": {
-                  "example": "any"
-                },
-                "characterId": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "SSS"
                 }
               }
             }
@@ -223,9 +282,6 @@
     "/players/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "id",
@@ -243,7 +299,7 @@
           }
         }
       },
-      "put": {
+      "patch": {
         "description": "",
         "parameters": [
           {
@@ -259,24 +315,24 @@
               "type": "object",
               "properties": {
                 "playerName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "George"
                 },
                 "characterName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "Senipul"
                 },
                 "campaign": {
-                  "example": "any"
-                },
-                "characterId": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "SSS"
                 }
               }
             }
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "200": {
+            "description": "OK"
           },
           "404": {
             "description": "Not Found"

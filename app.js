@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
+const mongoose = require('mongoose');
 
 //From the swagger-ui-express page, Sulove advised I throw that junk into routes/swagger-route.js instead
 

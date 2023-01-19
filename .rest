@@ -1,20 +1,16 @@
 //Localhost
 //They get mad when there's not empty space between the lines...even if it's a commented line...
 //Also for whatever reason place ### between each request so it knows they're separate.
+
+//Characters
 GET http://localhost:3000/characters/
-
-
 //Individuals
 ###
 GET http://localhost:3000/characters/63c460951020ab4635d1bf7a
-
 ###
 GET http://localhost:3000/characters/63c460951020ab4635d1bf7b
-
 ###
 GET http://localhost:3000/characters/63c460951020ab4635d1bf7c
-
-
 ###
 POST http://localhost:3000/characters/
 Content-Type: application/json
@@ -37,7 +33,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/characters/63c4796d29591d8cf4fd7897
+DELETE http://localhost:3000/characters/63c8760927254bd691c7ad62
 
 ###
 //this will overwrite EVERYTHING; we can't change one field at a time (yet)
@@ -46,93 +42,62 @@ DELETE http://localhost:3000/characters/63c4796d29591d8cf4fd7897
 //Assignment demands I use 204 but that status won't let me set json messages
 //So don't freak out that we get no message - freak out if we DO
 
-PUT http://localhost:3000/characters/63c6b8ca2ea7c3daee5962b0
+PATCH http://localhost:3000/characters/63c87cfc525cbe1872e1525d
 Content-type: application/json
 
 {
-  "characterName": "Sha'ar",
-  "playerName": "Tyler",
-  "race": "elf",
-  "class": "monk",
-  "level": "8",
-  "alignment": "LE",
+  "characterName": "Leedler",
+  "level": "20",
+  "alignment": "CE",
   "stats": {
-    "str": "14",
+    "str": "3",
     "dex": "20",
-    "con": "14",
-    "int": "10",
-    "wis": "20",
-    "cha": "10"
+    "con": "3",
+    "int": "3",
+    "wis": "3",
+    "cha": "20"
   }
 }
+//End characters
 
 //Players
-
-GET http://localhost:3000/characters/
-
+###
+GET http://localhost:3000/players/
 
 //Individuals
 ###
-GET http://localhost:3000/characters/63c460951020ab4635d1bf7a
-
+GET http://localhost:3000/players/63c460951020ab4635d1bf7a
 ###
-GET http://localhost:3000/characters/63c460951020ab4635d1bf7b
-
+GET http://localhost:3000/players/63c460951020ab4635d1bf7b
 ###
-GET http://localhost:3000/characters/63c460951020ab4635d1bf7c
-
-
+GET http://localhost:3000/players/63c460951020ab4635d1bf7c
 ###
-POST http://localhost:3000/characters/
+POST http://localhost:3000/players/
 Content-Type: application/json
 
 {
-  "characterName": "Amun Sunblessed",
-  "playerName": "Jay",
-  "race": "human",
-  "class": "sorcerer",
-  "level": "8",
-  "alignment": "CG",
-  "stats": {
-    "str": "8",
-    "dex": "10",
-    "con": "14",
-    "int": "12",
-    "wis": "14",
-    "cha": "20"
-  }
+"playerName": "Ross",
+"characterName": "Balthazar",
+"campaign": "Eberron"
 }
 
 ###
-DELETE http://localhost:3000/characters/63c4796d29591d8cf4fd7897
-
+DELETE http://localhost:3000/players/63c8760927254bd691c7ad62
 ###
-//this will overwrite EVERYTHING; we can't change one field at a time (yet)
-//Will even remove values we leave blank in PUT request
-
-//Assignment demands I use 204 but that status won't let me set json messages
-//So don't freak out that we get no message - freak out if we DO
-
-PUT http://localhost:3000/characters/63c6b8ca2ea7c3daee5962b0
+PATCH http://localhost:3000/players/63c88ff5b0b091bd98329493
 Content-type: application/json
 
 {
-  "characterName": "Sha'ar",
-  "playerName": "Tyler",
-  "race": "elf",
-  "class": "monk",
-  "level": "8",
-  "alignment": "LE",
-  "stats": {
-    "str": "14",
-    "dex": "20",
-    "con": "14",
-    "int": "10",
-    "wis": "20",
-    "cha": "10"
-  }
+  "characterName": "Doy'ul Daermon N'a'shezbaernon",
+  "playerName": "George",
+  "race": "eligas",
+  "class": "fighter",
+  "alignment": "CN",
 }
 
+//End Players
+
+//------
 
 //Render
 
@@ -185,7 +150,7 @@ DELETE https://cse341-l5.onrender.com/characters/63c484606242b6af027d4693
 //Assignment demands I use 204 but that status won't let me set json messages
 //So don't freak out that we get no message - freak out if we DO
 
-PUT https://cse341-l5.onrender.com/characters/63c6b8ca2ea7c3daee5962b0
+PATCH https://cse341-l5.onrender.com/characters/63c6b8ca2ea7c3daee5962b0
 Content-type: application/json
 
 {
@@ -205,3 +170,41 @@ Content-type: application/json
   }
 }
 
+//End characters
+
+//Players
+###
+GET http://cse341-l5.onrender.com/players/
+
+//Individuals
+###
+GET http://cse341-l5.onrender.com/players/63c460951020ab4635d1bf7a
+###
+GET http://cse341-l5.onrender.com/players/63c460951020ab4635d1bf7b
+###
+GET http://cse341-l5.onrender.com/players/63c460951020ab4635d1bf7c
+###
+POST http://cse341-l5.onrender.com/players/
+Content-Type: application/json
+
+{
+"playerName": "Ross",
+"characterName": "Balthazar",
+"campaign": "Eberron"
+}
+
+###
+DELETE http://cse341-l5.onrender.com/players/63c8760927254bd691c7ad62
+###
+PATCH http://cse341-l5.onrender.com/players/63c88ff5b0b091bd98329493
+Content-type: application/json
+
+{
+  "characterName": "Doy'ul Daermon N'a'shezbaernon",
+  "playerName": "George",
+  "race": "eligas",
+  "class": "fighter",
+  "alignment": "CN",
+}
+
+//End Players

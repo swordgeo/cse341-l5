@@ -14,6 +14,11 @@ const doc = {
   schemes: ['http'],
 };
 
+//Stop messing the swagger-output file except manually.
+//In fact we're disabling the auto-gen for safety reasons
+//package.json -- look at scripts
+//"swagger": "node swagger.js"
+
 const outputFile = './swagger-output.json';
 const endpointsFiles = ['routes/index.js'];
 
